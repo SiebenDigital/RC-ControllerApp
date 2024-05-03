@@ -445,6 +445,8 @@
 				DEVELOPMENT_TEAM = 8F33P49SF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Let me use it ";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Let me use them peripherals too";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -474,6 +476,8 @@
 				DEVELOPMENT_TEAM = 8F33P49SF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Let me use it ";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Let me use them peripherals too";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

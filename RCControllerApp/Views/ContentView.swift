@@ -26,9 +26,6 @@ struct ContentView: View {
             }
             .padding()
             
-            
-            VStack
-            
             VStack(alignment: .leading) {
                 Text("\(direction, specifier: "%.2f")")
                 WheelControl(value: $direction, range: -45.0...45.0, orientation: .horizontal)
