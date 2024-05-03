@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum ConnectionStates {
+    case connected
+    case connectionPending
+    case notConnected
+}
