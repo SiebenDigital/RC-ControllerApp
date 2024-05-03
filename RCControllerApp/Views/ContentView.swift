@@ -11,6 +11,8 @@ struct ContentView: View {
     @State var direction = Float(1.0)
     @State var speed = Float(1.0)
     
+    var btController = BTController()
+    
     var body: some View {
         NavigationStack {
             HStack {
@@ -37,14 +39,11 @@ struct ContentView: View {
                 WheelControl(value: $speed, range: -100.0...100.0)
                     .frame(maxWidth: 80, maxHeight: 150)
             })
-        
-            
-          
-            .navigationTitle("RC-Contoller")
-                
+            .navigationTitle("RC-Contoller")                
         }
-        
-        
+        .onAppear() {
+            btController.startUp()
+        }
     }
 }
 
