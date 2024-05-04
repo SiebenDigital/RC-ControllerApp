@@ -15,7 +15,12 @@
 		4FCEA04C2BE4E1C90081CB06 /* RCControllerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEA04B2BE4E1C90081CB06 /* RCControllerAppUITests.swift */; };
 		4FCEA04E2BE4E1C90081CB06 /* RCControllerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEA04D2BE4E1C90081CB06 /* RCControllerAppUITestsLaunchTests.swift */; };
 		4FCEA05F2BE4F2860081CB06 /* WheelControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEA05E2BE4F2860081CB06 /* WheelControl.swift */; };
+<<<<<<< HEAD
 		519BEEED2BE5084100E88A36 /* BTController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519BEEEC2BE5084100E88A36 /* BTController.swift */; };
+=======
+		4FCEA0612BE5064E0081CB06 /* ConnectionIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEA0602BE5064E0081CB06 /* ConnectionIndicator.swift */; };
+		4FCEA0642BE507830081CB06 /* ConnectionStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCEA0632BE507830081CB06 /* ConnectionStates.swift */; };
+>>>>>>> d0016aa (ConnectionIndicator)
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +52,12 @@
 		4FCEA04B2BE4E1C90081CB06 /* RCControllerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCControllerAppUITests.swift; sourceTree = "<group>"; };
 		4FCEA04D2BE4E1C90081CB06 /* RCControllerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCControllerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4FCEA05E2BE4F2860081CB06 /* WheelControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelControl.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		519BEEEC2BE5084100E88A36 /* BTController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTController.swift; sourceTree = "<group>"; };
+=======
+		4FCEA0602BE5064E0081CB06 /* ConnectionIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionIndicator.swift; sourceTree = "<group>"; };
+		4FCEA0632BE507830081CB06 /* ConnectionStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStates.swift; sourceTree = "<group>"; };
+>>>>>>> d0016aa (ConnectionIndicator)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +108,11 @@
 		4FCEA02F2BE4E1C80081CB06 /* RCControllerApp */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				519BEEEB2BE5083000E88A36 /* Controller */,
+=======
+				4FCEA0622BE507760081CB06 /* Connection */,
+>>>>>>> d0016aa (ConnectionIndicator)
 				4FCEA05D2BE4ED420081CB06 /* Components */,
 				4FCEA05C2BE4EB1E0081CB06 /* Views */,
 				4FCEA0302BE4E1C80081CB06 /* RCControllerAppApp.swift */,
@@ -145,16 +159,26 @@
 		4FCEA05D2BE4ED420081CB06 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4FCEA0602BE5064E0081CB06 /* ConnectionIndicator.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		519BEEEB2BE5083000E88A36 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				519BEEEC2BE5084100E88A36 /* BTController.swift */,
 			);
 			path = Controller;
+=======
+		4FCEA0622BE507760081CB06 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				4FCEA0632BE507830081CB06 /* ConnectionStates.swift */,
+			);
+			path = Connection;
+>>>>>>> d0016aa (ConnectionIndicator)
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,9 +312,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCEA05F2BE4F2860081CB06 /* WheelControl.swift in Sources */,
+				4FCEA0612BE5064E0081CB06 /* ConnectionIndicator.swift in Sources */,
 				4FCEA0332BE4E1C80081CB06 /* ContentView.swift in Sources */,
 				4FCEA0312BE4E1C80081CB06 /* RCControllerAppApp.swift in Sources */,
+<<<<<<< HEAD
 				519BEEED2BE5084100E88A36 /* BTController.swift in Sources */,
+=======
+				4FCEA0642BE507830081CB06 /* ConnectionStates.swift in Sources */,
+>>>>>>> d0016aa (ConnectionIndicator)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

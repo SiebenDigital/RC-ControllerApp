@@ -11,6 +11,7 @@ struct ContentView: View {
     @State var direction = Float(1.0)
     @State var speed = Float(1.0)
     
+<<<<<<< HEAD
     var btController = BTController()
     
     var body: some View {
@@ -62,10 +63,55 @@ struct ContentView: View {
         }
         .onAppear() {
             btController.startUp()
+=======
+    @State var connection: ConnectionStates = ConnectionStates.connectionPending
+    
+    var body: some View {
+        
+        NavigationStack {
+            
+            switch connection {
+            case .connected:
+                ConnectionIndicator(title: "Connected", foregroundColor: Color.myGreen, backgroundColor: Color.lightGreen)
+                .padding()
+            case .connectionPending:
+                ConnectionIndicator(title: "Connection Pending", foregroundColor: Color.myYellow, backgroundColor: Color.lightYellow)
+                .padding()
+            case .notConnected:
+                ConnectionIndicator(title: "Not Connected", foregroundColor: Color.myRed, backgroundColor: Color.lightRed)
+                .padding()
+            }
+            
+            
+            Spacer()
+            HStack {
+                VStack(alignment: .center) {
+     
+                    WheelControl(value: $direction, range: -45.0...45.0, orientation: .horizontal)
+                        .frame(width: 200, height: 80)
+                }
+                .padding()
+                
+                VStack(alignment: .trailing
+                       , content: {
+            
+                    WheelControl(value: $speed, range: -100.0...100.0)
+                        .frame(width: 80, height: 150)
+                }).padding()
+            }.padding()
+            
+          
+            .navigationTitle("RC-Contoller")
+                
+>>>>>>> d0016aa (ConnectionIndicator)
         }
     }
 }
 
+
+
 #Preview {
     ContentView()
 }
+
+
