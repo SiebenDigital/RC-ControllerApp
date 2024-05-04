@@ -32,12 +32,31 @@ struct ContentView: View {
                 Text("\(direction, specifier: "%.2f")")
                 WheelControl(value: $direction, range: -45.0...45.0, orientation: .horizontal)
                     .frame(maxHeight: 80)
+                    .simultaneousGesture(
+                                   DragGesture(minimumDistance: 0)
+                                       .onChanged({ _ in
+                                           
+                                       })
+                                       .onEnded({ _ in
+                                           direction = 1.0
+                                       })
+                               )
             }
             .padding()
             
             VStack(alignment: .leading, content: {
                 WheelControl(value: $speed, range: -100.0...100.0)
                     .frame(maxWidth: 80, maxHeight: 150)
+                    .simultaneousGesture(
+                                   DragGesture(minimumDistance: 0)
+                                       .onChanged({ _ in
+                                           
+                                       })
+                                       .onEnded({ _ in
+                                           speed = 1.0
+                                       })
+                               )
+
             })
             .navigationTitle("RC-Contoller")                
         }
